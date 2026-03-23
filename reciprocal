@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[100], temp;
+    int i, len;
+
+    printf("Enter a string: ");
+    // Use fgets to read a line of input safely
+    // Be sure to remove the trailing newline character if necessary
+    scanf("%s", str); 
+
+    len = strlen(str);
+
+    // Loop through half of the string
+    for (i = 0; i < len / 2; i++) {
+        // Swap characters at the start and end positions
+        temp = str[i];
+        str[i] = str[len - i - 1];
+        str[len - i - 1] = temp;
+    }
+
+    printf("Reversed string: %s\\n", str);
+
+    return 0;
+}
+
