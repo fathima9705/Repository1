@@ -7,7 +7,7 @@ int main() {
 
     printf("Enter a string: ");
     // Use fgets to read a line of input safely
-    // Be sure to remove the trailing newline character if necessary
+    // Be sure to remove or delete the trailing newline character if necessary
     scanf("%s", str); 
 
     len = strlen(str);
