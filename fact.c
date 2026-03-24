@@ -12,7 +12,7 @@ unsigned long long factorial(int n) {
 int main() {
     int num;
 
-    printf("Enter a non-negative integer: ");
+    printf("Enter a non - negative integer: ");
     // Input validation
     if (scanf("%d", &num) != 1) {
         printf("Invalid input. Please enter an integer.\n");
