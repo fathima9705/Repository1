@@ -15,7 +15,7 @@ int main() {
     printf("Enter a non - negative integer: ");
     // Input validation
     if (scanf("%d", &num) != 1) {
-        printf("Invalid input. Please enter an integer.\n");
+        printf("Invalid input. Please enter(specify the output) an integer.\n");
         return 1;
     }
 
